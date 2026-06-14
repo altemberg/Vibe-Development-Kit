@@ -1,0 +1,11 @@
+agent: ""
+next_agent: ""
+card_id: ""
+summary: ""
+decisions: []
+files_created: []
+files_modified: []
+files_to_read_next: []
+risks: []
+blocked_by: []
+next_steps: []

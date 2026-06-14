@@ -1,0 +1,11 @@
+id: CARD-000
+title: ""
+description: ""
+status: backlog
+complexity: small
+priority: medium
+owner: ""
+depends_on: []
+acceptance_criteria:
+  - ""
+notes: ""

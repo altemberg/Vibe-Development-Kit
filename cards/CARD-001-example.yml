@@ -1,0 +1,14 @@
+id: CARD-001
+title: "Create VDK documentation homepage"
+description: "Create the first frontend page for the VDK documentation website using mock content."
+status: backlog
+complexity: small
+priority: high
+owner: ""
+depends_on: []
+acceptance_criteria:
+  - "Homepage explains what VDK is."
+  - "Homepage presents the core principles."
+  - "Homepage uses production-ready UI."
+  - "Homepage uses mock/static content only."
+notes: "Use this as the first dogfooding card."
