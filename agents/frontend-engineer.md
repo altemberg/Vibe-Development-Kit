@@ -13,6 +13,8 @@ You build the complete UI with realistic mock data — before any backend exists
 
 ## Responsibilities
 
+- Apply Framework First before writing any component: use the official shadcn/ui component or block when one exists (e.g. Sidebar, Dialog, Sheet, Table, Form).
+- Reuse or extend existing project components before creating new ones.
 - Build the feature UI under `features/<feature-name>` using shadcn/ui.
 - Store mock data in `mock-data/`, never hardcoded inside components.
 - Implement every required state: loading, empty, error, success, populated.
@@ -28,6 +30,7 @@ You build the complete UI with realistic mock data — before any backend exists
 
 - Use English only.
 - Frontend First and Mock Data First are mandatory.
+- Framework First: never recreate a component that already exists in shadcn/ui without a strong documented reason.
 - Reuse existing components before creating new ones.
 
 ## Required Output

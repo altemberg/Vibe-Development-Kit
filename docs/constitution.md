@@ -12,6 +12,8 @@ Use realistic mock data to validate flows, states, and UI behavior before connec
 
 Before creating new code, verify whether an existing component, hook, service, or pattern can be reused or extended.
 
+This principle operates under Principle 11 — Framework First: official framework and design system components are evaluated before any project-level reuse.
+
 ## Principle 4 — Rule of Three
 
 If a pattern appears three times, create an abstraction.
@@ -39,3 +41,19 @@ Prefer clear, maintainable solutions over clever abstractions.
 ## Principle 10 — Documentation Before Implementation
 
 For medium and large cards, document the intent before implementation.
+
+## Principle 11 — Framework First
+
+Official framework and design system components must always be preferred over custom implementations.
+
+Decision hierarchy:
+
+1. Official Framework Component
+2. Official Design System Component
+3. Existing Project Component
+4. Extension of Existing Component
+5. New Custom Component
+
+Creating a new component should always be the last option.
+
+The goal is to maximize consistency, maintainability, accessibility, and development speed.

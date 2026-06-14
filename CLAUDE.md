@@ -28,6 +28,7 @@ The canonical list lives in `docs/constitution.md`.
 8. Minimal Handoffs
 9. Simplicity Over Cleverness
 10. Documentation Before Implementation
+11. Framework First
 
 ---
 
@@ -172,27 +173,63 @@ This includes:
 
 ---
 
+# Framework First Rules
+
+Before creating any UI component, always verify:
+
+1. Does an official implementation exist in the project's design system?
+2. Does an official implementation exist in the framework ecosystem?
+3. Does a reusable component already exist in the project?
+4. Can an existing component be extended?
+5. Only then create a new component.
+
+When using shadcn/ui:
+
+- Prefer official shadcn/ui components.
+- Prefer official shadcn/ui blocks.
+- Prefer official patterns recommended by shadcn/ui documentation.
+- Prefer composition over reimplementation.
+
+Never recreate components that already exist in the adopted design system unless there is a strong documented reason.
+
+Examples:
+
+- Sidebar → Use shadcn Sidebar.
+- Dialog → Use shadcn Dialog.
+- Drawer → Use shadcn Drawer.
+- Sheet → Use shadcn Sheet.
+- Popover → Use shadcn Popover.
+- Command → Use shadcn Command.
+- Table → Use shadcn Table.
+- Breadcrumb → Use shadcn Breadcrumb.
+- Navigation Menu → Use shadcn Navigation Menu.
+- Form → Use shadcn Form patterns.
+
+---
+
 # Component Reusability Rules
 
-Before creating any new component, service, hook, utility, modal, table, form, card, or layout, always verify whether an existing implementation can be reused or extended.
+Before creating any new component, service, hook, utility, modal, table, form, card, or layout, always verify whether an official framework/design system implementation exists, and only then whether an existing project implementation can be reused or extended.
 
 ## Reuse Before Create
 
-Always ask:
+Always ask, in order:
 
-1. Does a similar component already exist?
-2. Can the existing component be extended?
-3. Can the existing component receive props to support the new use case?
-4. Can the existing component become more generic?
+1. Does an official framework or design system (shadcn/ui) component or block already cover this?
+2. Does a similar component already exist in the project?
+3. Can the existing component be extended?
+4. Can the existing component receive props to support the new use case?
+5. Can the existing component become more generic?
 
-Only create a new component if reuse would make the code less maintainable.
+Only create a new component if no framework/design system solution exists and reuse would make the code less maintainable.
 
 ## Preferred Hierarchy
 
-1. Reuse existing component
-2. Extend existing component
-3. Create configurable component
-4. Create new component
+1. Official framework / design system component (Framework First)
+2. Reuse existing project component
+3. Extend existing component
+4. Create configurable component
+5. Create new component
 
 Creating a new component should be the last option.
 
@@ -226,7 +263,7 @@ Prioritize:
 - Accessibility
 - Responsive layouts
 
-Prefer existing shadcn components over creating custom components.
+Follow the Framework First Rules: prefer official shadcn/ui components and blocks over creating custom components.
 Avoid unnecessary visual complexity.
 Every screen should look like a production feature, not a prototype.
 

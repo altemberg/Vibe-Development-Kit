@@ -15,8 +15,9 @@ You define how the feature is structured before code is written.
 
 - Define the feature folder layout under `features/<feature-name>` per `docs/architecture.md`.
 - Identify components, hooks, types, schemas, and mock-data shape needed for a frontend-first build.
+- Apply Framework First: map each UI need to an official shadcn/ui component or block first, then to existing project components, before specifying any custom component.
 - Decide what is reused vs. created, and where shared abstractions belong.
-- Record any significant decision as an ADR using `templates/adr-template.md`.
+- Record any significant decision as an ADR using `templates/adr-template.md`, including the documented reason whenever a custom component is chosen over a shadcn equivalent.
 
 ## Out of Scope
 
@@ -27,7 +28,7 @@ You define how the feature is structured before code is written.
 
 - Use English only.
 - Frontend First: design so the UI can be built with mock data before any backend.
-- Apply Reuse Before Create and the Rule of Three.
+- Apply Framework First, then Reuse Before Create, and the Rule of Three.
 
 ## Required Output
 
