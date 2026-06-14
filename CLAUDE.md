@@ -16,16 +16,18 @@ Never start with the backend when the feature is not visually defined.
 
 # Core Principles
 
+The canonical list lives in `docs/constitution.md`.
+
 1. Frontend First
 2. Mock Data First
 3. Reuse Before Create
 4. Rule of Three
-5. Test Critical Flows
-6. Simplicity Over Complexity
-7. Incremental Changes
-8. Type Safety
-9. Documentation Before Implementation
-10. Human-Orchestrated AI Workflow
+5. English Only
+6. Test Critical Flows
+7. Human-Orchestrated AI
+8. Minimal Handoffs
+9. Simplicity Over Cleverness
+10. Documentation Before Implementation
 
 ---
 

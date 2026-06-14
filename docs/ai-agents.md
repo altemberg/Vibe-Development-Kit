@@ -21,9 +21,9 @@ Agent responsibilities belong to agent files.
 
 ## Handoff Rule
 
-Each agent must create:
+Each agent must create, namespaced by card id:
 
-- `output.md`
-- `handoff.yml`
+- an output artifact under `artifacts/output/<card-id>/`
+- a handoff for the next agent under `artifacts/input/<card-id>/handoff.yml` (from `templates/handoff-template.yml`)
 
-The next agent should only read the handoff and explicitly referenced files.
+The next agent should read only `CLAUDE.md`, the card, the latest handoff, and the files it explicitly references.
